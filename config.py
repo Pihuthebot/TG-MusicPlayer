@@ -17,5 +17,5 @@ contact_filter = filters.create(
     (message.from_user and message.from_user.is_contact) or message.outgoing
 )
 
-bot = Client(SESSION, API_ID, API_HASH, plugins=dict("TG-MusicPlayer.VCBot"))
+bot = Client(SESSION, API_ID, API_HASH, plugins=dict("TG-MusicPlayer/VCBot"))
 call_py = PyTgCalls(bot)
